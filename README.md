@@ -1,5 +1,5 @@
 # kasa_smart_plug_control
-Detect and control Kasa smart plugs from python or windows command prompt.  
+Detect and control Kasa smart plugs by name or IP address from python or windows command prompt.  
   
 ### Get the released Windows executable here:    
    https://github.com/rkinnett/kasa_smart_plug_control/releases
