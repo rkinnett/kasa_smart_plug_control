@@ -20,8 +20,8 @@ Detect and control Kasa smart plugs from python or windows command prompt.
     pip install python-kasa  
   
   Syntax:  
-    python kasa_smart_plug_control discover  
-    python kasa_smart_plug_control 192.xxx.xxx.xxx info  
-    python kasa_smart_plug_control 192.xxx.xxx.xxx on  
-    python kasa_smart_plug_control 192.xxx.xxx.xxx off  
-    python kasa_smart_plug_control MyPlug1 on  
+    python kasa_smart_plug_control.py discover  
+    python kasa_smart_plug_control.py 192.xxx.xxx.xxx info  
+    python kasa_smart_plug_control.py 192.xxx.xxx.xxx on  
+    python kasa_smart_plug_control.py 192.xxx.xxx.xxx off  
+    python kasa_smart_plug_control.py MyPlug1 on  
