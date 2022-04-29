@@ -3,16 +3,25 @@ import time
 import sys
 import re
 from kasa import SmartPlug, Discover
+'''
+KASA Smart Plug Controller
 
-# KASA API:
-# https://python-kasa.readthedocs.io/en/latest/index.html
+(c) Ryan Kinnett, 2022
+https://github.com/rkinnett/kasa_smart_plug_control
 
+Requires python-kasa:
+  pip install python-kasa
+
+Syntax:
+  python kasa_smart_plug_control discover
+  python kasa_smart_plug_control 192.xxx.xxx.xxx info
+  python kasa_smart_plug_control MySmartPlug1 on
+  python kasa_smart_plug_control MySmartPlug1 off
+
+KASA API:  https://python-kasa.readthedocs.io/en/latest/index.html
+'''
 
 asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
-
-command = None
-target = None
-
 
 async def main():    
     target_ip = None
@@ -66,8 +75,6 @@ async def main():
 
 
 
-
-
 async def discover():
     print('Detecting kasa smart plugs...')
     devices = await Discover.discover()
@@ -78,7 +85,4 @@ async def discover():
     return devices
 
 
-
-
 asyncio.run(main())
-
